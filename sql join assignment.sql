@@ -30,7 +30,7 @@ where c.Name = 'Appliances' or c.Name = 'Games';
 
 /* joins: find Product name, reviewer name, rating, and comment on the Visio TV. (only return for the lowest rating!) */
 select p.Name, r.Reviewer, r.Rating, r.Comment From products as p
-inner join reveiews as r on r.ProductID = p.ProductID
+inner join reviews as r on r.ProductID = p.ProductID
 where p.ProductID = 857 and r.rating = 1;
 
 -- ------------------------------------------ Extra - May be difficult
